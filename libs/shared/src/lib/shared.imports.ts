@@ -1,24 +1,15 @@
-// libs/shared/src/lib/shared.module.ts
-import { NgModule } from '@angular/core';
+/*
+// libs/shared/src/lib/shared.imports.ts
 import { CommonModule } from '@angular/common';
-import { SpinnerComponent } from './components/spinner/spinner.component';
-import { EmptyStateComponent } from './components/empty-state/empty-state.component';
 import { AutofocusDirective } from './directives/autofocus.directive';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { SpinnerComponent,PaginationComponent } from './components';
 
-@NgModule({
-  imports: [CommonModule],
-  declarations: [
-    SpinnerComponent,
-    EmptyStateComponent,
-    AutofocusDirective,
-    TruncatePipe
-  ],
-  exports: [
-    SpinnerComponent,
-    EmptyStateComponent,
-    AutofocusDirective,
-    TruncatePipe
-  ]
-})
-export class SharedModule {}
+export const SHARED_IMPORTS = [
+  CommonModule,
+  SpinnerComponent,
+  PaginationComponent,
+  AutofocusDirective,
+  TruncatePipe,
+];
+*/

@@ -1,0 +1,15 @@
+<h1 class="text-blue-500 font-bold">User List ...</h1>
+<div class="p-5 flex justify-between">
+  <button nz-button class="text-red-500 bg-red-300 rounded-md border border-red-200">دکمه پریمری</button>
+  <button nz-button nzType="primary" class="rounded-lg">دکمه پریمری</button>
+  <button nz-button nzType="text" class="rounded">دکمه پریمری</button>
+  <button nz-button nzType="dashed"> دکمه پریمری</button>
+  <button nz-button nzType="link">دکمه پریمری</button>
+</div>
+
+
+<app-pagination
+  [totalPages]="10"
+  [page]="1"
+  (pageChange)="pageChangedEvent($event)"
+></app-pagination>
